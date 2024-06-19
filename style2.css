@@ -1,0 +1,117 @@
+html, body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.left-container {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+}
+
+.photo-profile {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+button {
+    width: 70%;
+    background-color: #009688;
+    border-radius: 10px;
+    margin: 12px !important;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+button .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px; /* Jarak antara ikon dan teks */
+    vertical-align: middle; /* Vertikal align untuk menyelaraskan teks */
+}
+
+
+button:hover {
+    background-color: #074f48;
+    color: #f1f1f1;
+}
+
+.right-container {
+    position: fixed;
+    left: 300px; /* Mengubah posisi right-container ke kanan */
+    top: 0;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+    width: calc(100% - 300px); /* Mengatur lebar sesuai dengan sisa lebar layar */
+}
+
+.right-container-home {
+    position: absolute;
+    left: 300px; /* Mengubah posisi right-container ke kanan */
+    top: 200px;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+    width: calc(100% - 300px); /* Mengatur lebar sesuai dengan sisa lebar layar */
+}
+
+.right-container.blurred {
+    filter: blur(5px);
+}
+
+
+.right-container.closed {
+    left: 0;
+    width: 100%;
+}
+
+.cv-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cv-btn:hover {
+    background-color: #555;
+}
+
+.cravebuddy-container {
+    display: flex;
+    align-items: center;
+}
+
+.cravebuddy-image {
+    max-width: 50%;
+    margin-right: 20px;
+}
+
+.cravebuddy-description {
+    max-width: 50%;
+}
