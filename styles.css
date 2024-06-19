@@ -1,0 +1,390 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.header-text {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #007bff;
+}
+
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-thumbnail {
+    max-width: 100px; /* Menyesuaikan lebar maksimum gambar */
+    height: auto; /* Menjaga aspek rasio gambar */
+    margin-right: 10px; /* Jarak antara gambar dan teks artikel */
+}
+
+.content h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content p {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.content a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.content a:hover {
+    color: #0056b3;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-image {
+    margin-bottom: 2rem;
+    max-width: 200px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-details {
+    text-align: left;
+    max-width: 600px;
+}
+
+.about-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.about-details ul li {
+    margin-bottom: 10px;
+}
+
+/* Style for the contact section */
+#contact {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact .content {
+    text-align: center;
+}
+
+#contact h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+#contact p {
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+#contact .contact-options {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+#contact .contact-options ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact .contact-options ul ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+#contact .contact-options ul li {
+    margin-bottom: 1rem;
+}
+
+#contact .location-map {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#contact .location-map iframe {
+    max-width: 100%;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #f8f9fa;
+    color: #6c757d;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 2rem;
+}
+
+#articles {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#articles .content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.service-item {
+    background: #fff;
+    padding: 2rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item .article-thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.service-item h3 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.service-item p {
+    margin: 0;
+    color: #666;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px; /* Adding margin-top to push the footer down */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    color: #bdc3c7;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section a:hover {
+    color: #ecf0f1;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #bdc3c7;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.social-icon {
+    width: 30px;
+    margin: 0 10px;
+    filter: invert(100%);
+}
+
+.social-icon:hover {
+    filter: invert(75%);
+}
+
+.footer-section .social ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer-section .social ul li {
+    margin: 0 10px;
+}
+
+.footer-section .social ul li a {
+    color: #ecf0f1;
+    font-size: 24px;
+}
+
+.footer-section .social ul li a:hover {
+    color: #bdc3c7;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.project-item {
+    background: #fff;
+    padding: 2rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.project-item h3 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.project-item p {
+    margin: 0;
+    color: #666;
+}
+
+.content {
+    text-align: center; /* Pastikan teks di dalam .content terpusat */
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    
+    /* Menengahkan tombol */
+    display: block; /* Untuk mendapatkan lebar maksimal */
+    width: fit-content; /* Mengikuti lebar kontennya */
+    margin: auto; /* Mengatur margin auto akan memusatkan tombol secara horizontal */
+}
+
+
+.explore-btn:hover {
+    background-color: #ffffff;
+}
